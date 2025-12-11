@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Mohamadou Bamba Diagne</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">Mohamadou Bamba Diagne</a>
+      <nav class="nav" id="nav">
+        <a href="#home">Accueil</a>
+        <a href="#projects">Projets</a>
+        <a href="#about">À propos</a>
+        <a href="#contact">Contact</a>
+        <button id="themeToggle" class="btn-ghost" aria-label="Basculer thème">🌙</button>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Bonjour, je suis</p>
+          <h1>Mohamadou Bamba <span class="accent">Diagne</span></h1>
+          <p class="subtitle">Analyste • développeur logiciel</p>
+          <p class="subtitle">Spécialiste SEO</p>
+
+          <p class="typewriter"><span id="typewriter"></span><span class="cursor"></span></p>
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn">Voir mes projets</a>
+            <a href="#contact" class="btn btn-ghost">Me contacter</a>
+          </div>
+          <!-- Bouton Télécharger CV -->
+<div class="cv-button-container">
+  <a href="CV Bamba Diagne.pdf" class="cv-button" download>Télécharger mon CV</a>
+</div>
+
+          <div class="socials">
+            <a href="#" aria-label="GitHub">GitHub</a>
+            <a href="#" aria-label="LinkedIn">LinkedIn</a>
+            <a href="#" aria-label="Email">Email</a>
+          </div>
+        </div>
+
+        <!-- SECTION PHOTO SPHÉRIQUE + ANIMATIONS -->
+  <section class="photo-section">
+    <div class="photo-container">
+
+      <!-- Image de profil en sphère -->
+      <!-- Remplace "profile.jpg" par ta vraie image -->
+      <img src="image/unnamed.jpg" alt="Photo de profil" class="photo" />
+
+      <!-- Anneaux animés autour de la sphère -->
+      <div class="orbit"></div>
+      <div class="orbit2"></div>
+
+    </div>
+  </section>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Projets récents</h2>
+          <p>Quelques travaux sélectionnés — cliquez pour voir les détails.</p>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Project card -->
+          <article class="project-card" data-title="Application Todo" data-description="Une application de gestion de tâches avec synchronisation et notifications." data-tags="React,Node,SQLite" data-image="https://via.placeholder.com/800x500.png?text=Todo">
+            <img src="image/TODO.png" alt="Projet Todo">
+            <div class="project-info">
+              <h3>Todo App</h3>
+              <p>Application web réactive pour gérer vos tâches.</p>
+              <div class="project-meta">
+                <span>React</span><span>Node</span>
+              </div>
+            </div>
+            <button class="project-open">Voir</button>
+          </article>
+
+          <article class="project-card" data-title="Site d'entreprise" data-description="Site multi-page avec CMS headless et optimisation SEO." data-tags="HTML,CSS,SEO" data-image="https://via.placeholder.com/800x500.png?text=Site">
+            <img src="image/design-site-institutionnel-1132x1132.png" alt="Site d'entreprise">
+            <div class="project-info">
+              <h3>Site d'entreprise</h3>
+              <p>Site institutionnel performant et accessible.</p>
+              <div class="project-meta">
+                <span>HTML</span><span>CSS</span>
+              </div>
+            </div>
+            <button class="project-open">Voir</button>
+          </article>
+
+          <article class="project-card" data-title="Dashboard" data-description="Tableau de bord analytique en temps réel." data-tags="Vue,Charts,API" data-image="https://via.placeholder.com/800x500.png?text=Dashboard">
+            <img src="image/pipedrive-crm-dashboard-power-bi-2048x1152.png" alt="Dashboard">
+            <div class="project-info">
+              <h3>Dashboard</h3>
+              <p>Visualisation de données pour décisions rapides.</p>
+              <div class="project-meta">
+                <span>Vue</span><span>API</span>
+              </div>
+            </div>
+            <button class="project-open">Voir</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section alt">
+      <div class="container about-inner">
+        <div class="about-text">
+          <h2>À propos</h2>
+          <p>Développeur diplômé en génie logiciel. J'aime concevoir des applications simples, robustes et performantes. J'ai de l'expérience en développement web full-stack, bases de données et devops.</p>
+          <ul class="skills-list">
+            <li>JavaScript, TypeScript, React, Vue</li>
+            <li>Node.js, Express, PostgreSQL</li>
+            <li>CI/CD, Docker, AWS</li>
+          </ul>
+        </div>
+        <div class="about-stats">
+          <div class="stat">
+            <h3>6+</h3>
+            <p>Projets terminés</p>
+          </div>
+          <div class="stat">
+            <h3>3</h3>
+            <p>Années d'expérience</p>
+          </div>
+          <div class="stat">
+            <h3>1</h3>
+            <p>Master en génie logiciel</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Contact</h2>
+          <p>Tu veux collaborer ? Écris-moi.</p>
+        </div>
+
+        <form id="contactForm" class="contact-form" action="#" onsubmit="return false;">
+          <div class="form-grid">
+            <input type="text" id="name" placeholder="Ton nom" required />
+            <input type="email" id="email" placeholder="Ton email" required />
+            <textarea id="message" rows="6" placeholder="Ton message" required></textarea>
+          </div>
+          <div class="form-actions">
+            <button class="btn" id="sendBtn">Envoyer</button>
+            <p id="formMsg" class="form-msg" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Ton Nom — Développeur logiciel. <a href="#">Mentions légales</a></p>
+    </div>
+  </footer>
+
+  <!-- Project Modal -->
+  <div id="projectModal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose" aria-label="Fermer">✕</button>
+      <img id="modalImage" src="" alt="" />
+      <div class="modal-body">
+        <h3 id="modalTitle">Titre</h3>
+        <p id="modalDescription">Description</p>
+        <p id="modalTags" class="modal-tags"></p>
+        <div class="modal-links">
+          <a id="modalDemo" href="#" target="_blank">Voir démo</a>
+          <a id="modalCode" href="#" target="_blank">Voir code</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js" type="module"></script>
+</body>
+</html>
